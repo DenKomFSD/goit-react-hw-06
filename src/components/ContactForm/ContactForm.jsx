@@ -35,7 +35,9 @@ export default function ContactForm() {
     >
       <Form className={css.form}>
         <div className={css.field}>
-          <label htmlFor="user_name">Name</label>
+          <label className={css.labelfield} htmlFor="user_name">
+            Name
+          </label>
           <Field
             className={css.inputfield}
             type="text"
@@ -45,7 +47,9 @@ export default function ContactForm() {
           <ErrorMessage className={css.error} name="name" component="span" />
         </div>
         <div className={css.field}>
-          <label htmlFor="phoneId">Phone</label>
+          <label className={css.labelfield} htmlFor="phoneId">
+            Phone
+          </label>
           <Field
             className={css.inputfield}
             type="text"

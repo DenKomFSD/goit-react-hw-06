@@ -5,6 +5,10 @@
   justify-content: start;
   align-items: center;
   gap: 8px;
+  background: #283646;
+  padding: 20px;
+  color: #c6f806;
+  border-radius: 8px;
 }
 
 .search {
@@ -14,5 +18,8 @@
   padding: 8px;
   border-radius: 4px;
   margin-bottom: 16px;
-  color: black;
+  color: #c6f806;
+  border: 1px solid #c6f806;
+  border-radius: 8px;
+  background: #000;
 }
