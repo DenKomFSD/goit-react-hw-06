@@ -8,15 +8,19 @@ export default function ContactList() {
   const filteredContacts =
     contacts?.filter(
       (contact) =>
-        contact.name &&
-        contact.name.toLowerCase().includes(filter.toLowerCase())
+        contact.name !== undefined &&
+        contact.name.toLowerCase().includes(filter ? filter.toLowerCase() : "")
     ) || [];
 
   return (
-    <ul className={css.container}>
-      {filteredContacts.map((contact) => (
-        <Contact key={contact.id} contact={contact} />
-      ))}
-    </ul>
+    <>
+      {filteredContacts.length > 0 && (
+        <ul className={css.container}>
+          {filteredContacts.map((contact) => (
+            <Contact key={contact.id} contact={contact} />
+          ))}
+        </ul>
+      )}
+    </>
   );
 }

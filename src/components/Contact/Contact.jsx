@@ -21,7 +21,7 @@ export default function Contact({ contact }) {
           {contact.number}
         </p>
       </li>
-      <button className={css.btn} onClick={() => handleDeleteClick}>
+      <button className={css.btn} onClick={handleDeleteClick}>
         Delete
       </button>
     </div>
