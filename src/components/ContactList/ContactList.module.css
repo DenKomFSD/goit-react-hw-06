@@ -4,6 +4,6 @@
   /* flex-wrap: wrap; */
   max-width: 1200px;
   flex-direction: row;
-  gap: 12px;
+  gap: 30px;
   padding: 8px;
 }

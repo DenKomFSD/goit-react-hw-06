@@ -7,8 +7,11 @@ function App() {
   return (
     <>
       <h1>Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
+      <div className="contacts">
+        <ContactForm />
+        <SearchBox />
+      </div>
+
       <ContactList />
     </>
   );
